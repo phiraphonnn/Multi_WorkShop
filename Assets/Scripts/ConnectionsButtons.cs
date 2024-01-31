@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 
-public class ConnectionButtons : MonoBehaviour
+public class ConnectionsButtons : MonoBehaviour
 {
     public void StartHost()
     {

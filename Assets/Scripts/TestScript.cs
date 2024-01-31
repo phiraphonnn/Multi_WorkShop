@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,15 +9,14 @@ public class TestScript : MonoBehaviour
     void Start()
     {
         inputReader.MoveEvent += HandleMove;
-    }
 
+    }
     private void OnDestroy()
     {
         inputReader.MoveEvent -= HandleMove;
     }
 
-    // Update is called once per frame
-    private void HandleMove(Vector2 movement)
+    public void HandleMove(Vector2 movement)
     {
         Debug.Log(movement);
     }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Netcode.Components;
 using UnityEngine;
+using Unity.Netcode.Components;
 
 public class ClientNetworkTransform : NetworkTransform
 {
@@ -15,15 +15,14 @@ public class ClientNetworkTransform : NetworkTransform
     {
         CanCommitToTransform = IsOwner;
         base.Update();
-        
-        if (NetworkManager != null)
+        if(NetworkManager != null)
         {
-            if (NetworkManager.IsConnectedClient || NetworkManager.IsListening)
+            if(NetworkManager.IsConnectedClient || NetworkManager.IsListening)
             {
                 if (CanCommitToTransform)
                 {
                     TryCommitTransformToServer(transform, NetworkManager.LocalTime.Time);
-                }    
+                }
             }
         }
     }
@@ -32,4 +31,6 @@ public class ClientNetworkTransform : NetworkTransform
     {
         return false;
     }
+
+
 }
