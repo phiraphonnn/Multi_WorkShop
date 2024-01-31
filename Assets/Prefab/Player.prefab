@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2927982109851837550}
   - component: {fileID: 6556121389829000968}
   - component: {fileID: 7767445638964686888}
-  - component: {fileID: 6102391324002197774}
+  - component: {fileID: 5675572669143089583}
   m_Layer: 0
   m_Name: TankTreads
   m_TagString: Untagged
@@ -217,7 +217,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.76, y: 2.05}
   m_EdgeRadius: 0
---- !u!114 &6102391324002197774
+--- !u!114 &5675572669143089583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3291511152506766260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b00e323b6b17c34aa576d563a0de2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseUnreliableDeltas: 0
@@ -274,7 +274,7 @@ Transform:
   m_GameObject: {fileID: 3658360584566528154}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -341,7 +341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1866190756749194094}
-  - component: {fileID: 5497053316446122000}
+  - component: {fileID: 357559030289719217}
   m_Layer: 0
   m_Name: TurretPivot
   m_TagString: Untagged
@@ -358,14 +358,14 @@ Transform:
   m_GameObject: {fileID: 4304402747445563562}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.45, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3706765154435283772}
   m_Father: {fileID: 628271747471026164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5497053316446122000
+--- !u!114 &357559030289719217
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4304402747445563562}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b00e323b6b17c34aa576d563a0de2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseUnreliableDeltas: 0
@@ -406,7 +406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 628271747471026164}
   - component: {fileID: 2422944384670255059}
-  - component: {fileID: 1315896231480453782}
+  - component: {fileID: -6927308206183696549}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -452,7 +452,7 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &1315896231480453782
+--- !u!114 &-6927308206183696549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6614021363441252385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b00e323b6b17c34aa576d563a0de2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseUnreliableDeltas: 0
