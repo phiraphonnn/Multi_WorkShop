@@ -7,9 +7,10 @@ using UnityEngine.Serialization;
 
 public class Health : NetworkBehaviour
 {
-    public NetworkVariable<int> currentHealth = new NetworkVariable<int>();
     [field: SerializeField] public int MaxHealth { get; private set; } = 100;
-
+    
+    public NetworkVariable<int> CurrentHealth = new NetworkVariable<int>();
+    
     private bool isDead;
     public Action<Health> OnDie;
     
@@ -18,7 +19,7 @@ public class Health : NetworkBehaviour
     {
         if (!IsServer) { return; }
 
-        currentHealth.Value = MaxHealth;
+        CurrentHealth.Value = MaxHealth;
     }
 
     public void TakeDamage(int damageValue)
@@ -33,12 +34,12 @@ public class Health : NetworkBehaviour
     
     private void ModifyHealth(int value)
     {
-        if (!isDead) { return; }
+        if (isDead) { return; }
 
-        int newHealth = currentHealth.Value + value;
-        currentHealth.Value = Mathf.Clamp(newHealth, 0, MaxHealth);
+        int newHealth = CurrentHealth.Value + value;
+        CurrentHealth.Value = Mathf.Clamp(newHealth, 0, MaxHealth);
 
-        if (currentHealth.Value == 0)
+        if (CurrentHealth.Value == 0)
         {
             OnDie?.Invoke(this);
             isDead = true;
