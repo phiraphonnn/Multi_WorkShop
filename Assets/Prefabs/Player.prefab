@@ -49,8 +49,6 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -73,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2084337171
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 9d8bd4f8481a773488649b18bd02cbc1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -137,8 +135,6 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -161,7 +157,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2084337171
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 200
   m_Sprite: {fileID: 21300000, guid: a94bf141bd2044c4399e321445c83112, type: 3}
   m_Color: {r: 0.22454612, g: 0.5471698, b: 0.23837285, a: 1}
@@ -376,8 +372,6 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -400,7 +394,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2084337171
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1a838243856331f4681c559527ad5846, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -710,8 +704,6 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -734,7 +726,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2084337171
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 8769e4453ce5bc3429cfba7d58fbef13, type: 3}
   m_Color: {r: 0.31038624, g: 0.7075472, b: 0.32716683, a: 1}
@@ -917,9 +909,11 @@ MonoBehaviour:
   clientProjectilePrefab: {fileID: 172665126963949012, guid: b92e756a2e56a5a498f48452585cb035, type: 3}
   muzzleFlash: {fileID: 1116926993663176576}
   playerCollider: {fileID: 1690427080562615906}
+  wallet: {fileID: 6573864831179466537}
   projectileSpeed: 30
   fireRate: 0.75
   muzzleFlashDuration: 0.075
+  costToFire: 1
 --- !u!114 &8039483291240837246
 MonoBehaviour:
   m_ObjectHideFlags: 0
